@@ -1,0 +1,144 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color: white;
+    cursor: default;
+    overflow: hidden;
+}
+.main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+}
+.content {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.inner-Content  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    gap: 9px;
+}
+.Shop-btn button {
+    font-size: 1.5rem;
+    padding: 0.4rem;
+    font-weight: bold;
+    border-radius: 2rem;
+    cursor: pointer;
+    border: 2px solid black;
+}
+.mIimage{
+    display: flex;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+}
+.mIimage img{
+    width: 64%;
+}
+.mouseMove {
+    background-color: #0d0d0d;
+    border: 2px solid;
+    color: white;
+    font-weight: bold;
+    z-index: 10;
+    border-radius: 50%;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 3.5%;
+    position: relative;
+}
+.page2{
+    display: none;
+    width: 100%;
+}
+.page2 video{
+    width: 100%;
+}
+@media only screen and (width<= 600px){
+    .mouseMove {
+        background-color: #0d0d0d;
+        border: 2px solid;
+        color: white;
+        font-weight: bold;
+        z-index: 10;
+        border-radius: 50%;
+        padding: 0.5rem;
+        display: none;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        width: 3.5%;
+        position: relative;
+    }
+    .main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 1rem;
+        flex-direction: column;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+    }
+    .content {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+    .inner-Content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.2rem;
+        gap: 9px;
+    }
+    .Shop-btn button {
+        font-size: 1rem;
+        padding: 0.4rem;
+        font-weight: bold;
+        border-radius: 2rem;
+        cursor: pointer;
+        border: 2px solid black;
+    }
+    .mIimage {
+        display: flex;
+        width: 95%;
+        justify-content: center;
+        align-items: center;
+    }
+    .mIimage img {
+        width: 97%;
+    }
+    .page2 {
+        display: none;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+}
